@@ -11,7 +11,21 @@ app = Flask(__name__)
 
 @app.route('/average', methods=['POST'])
 def calculate_average():
-    pass
+    """
+    Calculate average.
+    """
+    try:
+        data = request.get_json()
+
+        # Verify that input is an array
+        if not isinstance(data, list):
+            return jsonify({"ERROR": "Invalid input format. Expected an array."}), 400
+
+        average = sum(data) / len(data)
+        return jsonify({"average": average}), 200
+
+    except Exception as e:
+        return jsonify({"ERROR": str(e)}), 400
 
 
 @app.route('/sum', methods=['POST'])
