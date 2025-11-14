@@ -20,7 +20,8 @@ def calculate_average():
         # Verify that input is an array
         if not isinstance(data, list):
             return jsonify({"ERROR": "Invalid input format. Expected an array."}), 400
-
+if len(data) == 0:
+   return jsonify({"ERROR": "Array must not be empty."}), 400
         average = sum(data) / len(data)
         return jsonify({"average": average}), 200
 
