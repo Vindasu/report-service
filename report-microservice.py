@@ -42,7 +42,7 @@ def require_json_list():
 # custom messages for possible errors
 @app.errorhandler(400)
 def handle_400(err):
-    return jsonify({"error": "Bad Request", "message": ""}), 400
+    return jsonify({"error": "Bad Request", "message": err.description}), 400
 
 @app.errorhandler(404)
 def handle_404(err):
