@@ -22,12 +22,12 @@ pip install flask requests
 
 **Start the microservice:**
 ```bash
-python statistics_microservice.py
+python report-microservice.py
 ```
 
 **Run the test suite:**
 ```bash
-python test_statistics.py
+python test.py
 ```
 
 ---
