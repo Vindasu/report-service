@@ -1,5 +1,5 @@
 """
-Quick test for Statistics Microservice
+Quick test for Report Microservice
 Run this AFTER starting report-microservice.py
 """
 
@@ -9,7 +9,7 @@ import json
 URL = "http://localhost:5003"
 
 print("\n" + "="*50)
-print("Testing Statistics Microservice")
+print("Testing Report Microservice")
 print("="*50 + "\n")
 
 
