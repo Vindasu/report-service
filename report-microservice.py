@@ -1,5 +1,5 @@
 """
-Statistics Microservice
+Report Microservice
 Port: 5003
 """
 
@@ -81,7 +81,7 @@ def calculate_minimum():
 
 if __name__ == '__main__':
     print("\n" + "="*50)
-    print("📊 Statistics Microservice Running")
+    print("📊 Report Microservice Running")
     print("🌐 http://localhost:5003")
     print("="*50 + "\n")
 
