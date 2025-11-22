@@ -16,7 +16,6 @@ def require_json_list():
         if fail, aborts with 400 and descriptive message
         returns: validated list of nums if success
     """
-    # check that request is a json
     if not request.is_json:
         abort(400, description = "Content-Type must be application/json with a JSON body.")
 
